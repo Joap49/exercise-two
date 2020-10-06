@@ -94,14 +94,24 @@ console.log("weatherData", weatherData);
               <div className="WeatherInfo_Image">
                 <weatherImage weatherType={weatherType} />
               </div>
-            <p>Weather Type: {weatherType}</p>
-            <p>Current Temperature: {currentTemp}</p>
-            <p>High Temperature: {highTemp}</p>
-            <p>Low Termperature: {lowTemp}</p>
-            <p>Cloudiness: {cloudiness}</p>
-            <p>Humidity: {humidity}</p>
-            <p>Wind Speed: {windSpeed}</p>
+              <p>Weather Type: {weatherType}</p>
+              <h3 className="Label">Current Temperature:</h3>
+              <p className="WeatherInfo_Temperature">{currentTemp}</p>
             </div>
+            <div className="WeatherInfo_Extra">
+              <h3 className="Label">High Temperature:</h3> 
+              <p>{highTemp}</p>
+              <h3 className="Label">Low Termperature:</h3> 
+              <p>{lowTemp}</p>
+              <h3 className="Label">Cloudiness:</h3> 
+              <p>{cloudiness}</p>
+              <h3 className="Label">Humidity:</h3> 
+              <p>{humidity}</p>
+              <h3 className="Label">Wind Speed:</h3> 
+              <p>{windSpeed}</p>
+            </div>
+            
+
           </div>
       </main>
     </>

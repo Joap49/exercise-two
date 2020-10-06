@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
     faCloud,
@@ -23,7 +23,6 @@ function WeatherImage({ weatherType }) {
             return <FontAwesomeIcon icon={faCloud} />;
         default:
             return <FontAwesomeIcon icon={faWind} />;
-
     }
 }
 
