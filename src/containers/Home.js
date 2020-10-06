@@ -3,13 +3,14 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
 import Header from "../components/Header";
+import WeatherImage from "../components/WeatherImage";
+
 
 const weatherKey = 'bcfd0efd34f39086ca2622a1b67396a0';
 
 function Home() {
-
 const history = useHistory();
-console.log("history", history);
+
 const [weatherData, setWeatherData] = useState(null);
 const [city, setCity] = useState("Milan");
 
@@ -89,6 +90,10 @@ console.log("weatherData", weatherData);
       <main className="Home">
         <h2>Weather in { city }</h2>
           <div className="WeatherInfo">
+            <div className="WeatherInfo_Basic">
+              <div className="WeatherInfo_Image">
+                <weatherImage weatherType={weatherType} />
+              </div>
             <p>Weather Type: {weatherType}</p>
             <p>Current Temperature: {currentTemp}</p>
             <p>High Temperature: {highTemp}</p>
@@ -96,6 +101,7 @@ console.log("weatherData", weatherData);
             <p>Cloudiness: {cloudiness}</p>
             <p>Humidity: {humidity}</p>
             <p>Wind Speed: {windSpeed}</p>
+            </div>
           </div>
       </main>
     </>
