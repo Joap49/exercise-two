@@ -1,10 +1,11 @@
 .Header {
+  /* text-transform: uppercase; */
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0 25px; /*gutters*/
+  padding: 0 25px; 
 }
 
 .Header nav a {
@@ -16,14 +17,14 @@
 }
 
 .Header nav a:hover {
-  color: magenta;
+  color: #808CF5;
 }
 
 /*--- Home Styling ---*/
 .Home {
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0 25px 60px; /*gutters*/
+  padding: 0 25px 60px; 
 }
 
 .Home h2 {
@@ -34,7 +35,7 @@
 }
 
 .Home h2 span {
-  color: magenta;
+  color: #808CF5;
 }
 
 .WeatherInfo {
@@ -49,10 +50,6 @@
   text-align: center;
 }
 
-/* .WeatherInfo_Basic h3 {
-  font-size: 60px;
-  margin: 0;
-} */
 
 .WeatherInfo_Type {
   font-size: 60px;

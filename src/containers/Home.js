@@ -16,7 +16,7 @@ const [city, setCity] = useState("Milan");
 
 useEffect(() => {
   axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${"Milan"}&units=metric&appid=${weatherKey}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${weatherKey}`
   )
   .then(function (response) {
     const weather = response.data;
@@ -36,6 +36,7 @@ useEffect(() => {
   if(city){
     setCity(city)
   }
+  console.log("urlParams", urlParams)
 }, [history]); // any time history updates, we will get new param
 
 
