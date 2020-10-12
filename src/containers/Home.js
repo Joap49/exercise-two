@@ -89,6 +89,7 @@ console.log("weatherData", weatherData);
 return (
   <>
     <Header />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"></link>
     <main className="Home">
       <h2>
         Weather in <span>{city}</span>
@@ -102,7 +103,7 @@ return (
             <WeatherImage weatherType={weatherType} />
           </div>
           <p className="WeatherInfo_Type">{weatherType} </p>
-          <h3 className="Label">Current Temperature:</h3>
+          <h3 className="BigLabel">Current Temperature:</h3>
           <p className="WeatherInfo_Temperature">{currentTemp}</p>
         </div>
         <div className="WeatherInfo_Extra">
