@@ -10,6 +10,7 @@
   padding: 0 25px; 
 }
 
+  /* Cities */
 .Header nav a {
   color: black;
   font-size: 24px;
@@ -23,7 +24,7 @@
 }
 
 
-/*--- Home Styling ---*/
+
 .Home {
   margin: 0 auto;
   max-width: 1080px;
@@ -113,11 +114,6 @@
     flex-direction: column;
   }
 
-  .Header nav {
-    /* display: flex; */
-    /* flex-direction: column; */
-  }
-
   .Header nav a {
     font-size: 14px;
   }
@@ -129,7 +125,6 @@
   .WeatherInfo_Extra {
     border: 1px solid black;
     border-top: none;
-
     flex-direction: column;
   }
 }
